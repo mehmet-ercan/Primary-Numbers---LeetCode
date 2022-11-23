@@ -13,7 +13,9 @@ public class Main {
 
         do {
             val = Integer.parseInt(input.nextLine());
+
             int primaryNums = s.countPrimes(val);
+
             System.out.println(primaryNums);
         } while (val != -1);
 
@@ -27,7 +29,6 @@ class Solution {
         else if (n == 2) return 0;
 
         boolean[] array = new boolean[(int) n + 1];
-
         Arrays.fill(array, true);
 
         for (int i = 2; i < n; i++) {
